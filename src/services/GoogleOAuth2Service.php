@@ -123,6 +123,10 @@ class GoogleOAuth2Service extends Service
 			$this->attributes['url'] = $info['link'];
 		}
 
+        if (!empty($info['email'])) {
+            $this->attributes['email'] = $info['email'];
+        }
+
 		/*if (!empty($info['gender']))
 			$this->attributes['gender'] = $info['gender'] == 'male' ? 'M' : 'F';
 		
