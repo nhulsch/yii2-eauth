@@ -189,7 +189,7 @@ class GoogleOAuth2Service extends Service
             array_unshift($route, '');
 
             // Can not use these params in OAuth2 callbacks
-            foreach (['code', 'state', 'redirect_uri', 'scope'] as $param) {
+            foreach (['code', 'state', 'redirect_uri', 'scope', 'authuser', 'prompt', 'session_state'] as $param) {
                 if (isset($route[$param])) {
                     unset($route[$param]);
                 }
