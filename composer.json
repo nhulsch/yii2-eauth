@@ -24,7 +24,7 @@
 		"php": ">=5.4.0",
 		"lib-curl": "*",
 		"yiisoft/yii2": "*",
-		"carlos-mg89/oauth": "*",
+		"lusitanian/oauth": "~0.3.0",
 		"nodge/lightopenid": "~1.1.0"
 	},
 	"extra": {
